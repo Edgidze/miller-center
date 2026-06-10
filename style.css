@@ -16,7 +16,7 @@ ul {
 
 #main-page-contents{
     min-height: 100vh;
-    background-color: black;
+    background-color:rgb(48, 48, 48);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,12 +34,37 @@ ul {
     justify-content: center;
 }
 
-#main-page-filler {
+/* #main-page-filler {
     width: 100%;
     flex: 1;
 
     overflow: hidden;
     display: flex;
+} */
+
+#main-page-filler {
+    flex: 1;
+    width: 100%;
+
+    background-image:
+        linear-gradient(to bottom, rgb(48, 48, 48) 0px, transparent 39px),
+        linear-gradient(to top, rgb(48, 48, 48) 0px, transparent 39px),
+        url("images/miller_center_view.jpg");
+
+    background-size:
+        100% 39px,
+        100% 39px,
+        cover;
+
+    background-position:
+        top center,
+        bottom center,
+        center center;
+
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat;
 }
 
 #main-page-background {
