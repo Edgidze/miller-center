@@ -22,17 +22,19 @@ ul {
     align-items: center;
 }
 
+
+
 .page-header, .page-navigation {
     align-self: stretch;
-
     width: 100%;
 }
 
+
 .page-header {
-    padding: 20px;
     display: flex;
     justify-content: center;
 }
+
 
 /* #main-page-filler {
     width: 100%;
