@@ -1,3 +1,6 @@
+
+/* Компоненты начальной страницы */
+
 body {
     margin: 0;
     min-height: 100%;
@@ -14,7 +17,7 @@ ul {
     margin: 0;
 }
 
-#main-page-contents{
+.page-contents{
     min-height: 100vh;
     background-color:rgb(48, 48, 48);
     display: flex;
@@ -35,10 +38,11 @@ ul {
     justify-content: center;
 }
 
-#main-page-logo {
+#logo {
     margin: 10px;
 }
 
+/* В предыдущей версии здесь предполагалось показывать картинку без градиентных затемнений */
 
 /* #main-page-filler {
     width: 100%;
@@ -48,9 +52,12 @@ ul {
     display: flex;
 } */
 
-#main-page-filler {
+.page-filler {
     flex: 1;
     width: 100%;
+}
+
+#main-page-filler {
 
     background-image:
         linear-gradient(to bottom, rgb(48, 48, 48) 0px, transparent 39px),
@@ -105,4 +112,106 @@ ul {
     font: inherit;
 
     flex: 1;
+}
+
+/* Компоненты страницы партнёров */
+
+#partners-page-filler {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+.side-nav {
+    width: 280px;
+    padding: 24px;
+    background-color: inherit;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.side-nav h2 {
+    margin: 0 0 8px;
+    font-size: 24px;
+}
+
+.side-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side-nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.side-nav summary {
+    cursor: pointer;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-nav summary::-webkit-details-marker {
+    display: none;
+}
+
+.side-nav summary::after {
+    content: "+";
+}
+
+.side-nav details[open] > summary::after {
+    content: "−";
+}
+
+.nav-level-1 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 12px;
+}
+
+.nav-level-1 > summary {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.nav-level-1 > ul {
+    margin-top: 8px;
+    padding-left: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-level-2 > summary {
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 0.9;
+    padding: 6px 0;
+}
+
+.nav-level-2 > ul {
+    margin-top: 6px;
+    padding-left: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.nav-level-2 a {
+    font-size: 14px;
+    opacity: 0.75;
+}
+
+.nav-level-2 a:hover {
+    opacity: 1;
 }
