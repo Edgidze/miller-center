@@ -284,9 +284,14 @@
         </div>
         <div class="page-navigation">
             <ul class="navigation-items-list">
-                <li><a class="navigation-button" href="">О нас</a></li>
-                <li><a class="navigation-button" href="index.html">На главную</a></li>
-                <li><a class="navigation-button" href="">Партнёрам</a></li>
+                <!-- на экранах уже пикселя возможная проблема, что кнопки навигации в ширину не поместятся- возможно, необходима обработка таких случаев -->
+                <li class="navigation-placeholder-short"></li>
+                <li class="navigation-button-wrapper"><a class="navigation-button" href="">О нас</a></li>
+                <li class="navigation-placeholder"></li>
+                <li class="navigation-button-wrapper"><a class="navigation-button" href="index.html">На главную</a></li>
+                <li class="navigation-placeholder"></li>
+                <li class="navigation-button-wrapper"><a class="navigation-button" href="">Партнёрам</a></li>
+                <li class="navigation-placeholder-short"></li>
             </ul>
         </div>
     </div>
