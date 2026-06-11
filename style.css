@@ -100,18 +100,30 @@ ul {
     display: block;
 }
 
-.page-navigation ul {
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 10px;
+.navigation-items-list {
+    margin: 0;
+    padding: 10px 20px; 
+    list-style-type: none;
+
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
 }
 
-.page-navigation {
+.navigation-items-list li {
+    flex: 1;
+
+    display: flex;
+}
+
+/* .page-navigation ul {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    padding: 10px; 
     display: flex;
     justify-content: space-between;
-}
+    
+} */
 
 .navigation-button {
     background-color: transparent;
@@ -123,6 +135,10 @@ ul {
     font: inherit;
 
     flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
 }
 
 /* Компоненты страницы партнёров */
