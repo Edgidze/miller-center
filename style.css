@@ -89,3 +89,20 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 5px 20px;
+    margin: 10px 20px;
+    font: inherit;
+
+    flex: 1;
+}
