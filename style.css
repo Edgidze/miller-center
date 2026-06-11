@@ -153,11 +153,32 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 14px;
+
+    /* вместе со следующим правилом перемещает полоску скроллера влево */
+    direction: rtl;
 }
 
-.side-nav h2 {
-    margin: 0 0 8px;
+/* вторая компонента перемещения скроллера категорий влево */
+.side-nav > * {
+    direction: ltr;
+}
+
+/* стилизация скроллера */
+.side-nav {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.35) transparent;
+}
+
+
+#navigation-area h2 {
+    margin: 10px 20px;
     font-size: 24px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: inherit;
+
 }
 
 .side-nav ul {
