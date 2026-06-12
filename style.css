@@ -295,6 +295,8 @@ ul {
 
 /* стилизация секции информации про партнёра */
 
+
+
 #partner-area {
     flex: 1 1 0;
     min-width: 0;
@@ -303,6 +305,22 @@ ul {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 24px;
+
+    container-type: inline-size;
+}
+
+.partner-header {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    max-width: 100%;
+}
+
+.partner-header h1 {
+    margin: 0;
+    font-size: clamp(24px, 8cqw, 56px);
+    line-height: 1.1;
+    font-weight: 700;
+    overflow-wrap: anywhere;
 }
 
 .partner-content {
