@@ -39,6 +39,7 @@ ul {
 
 .page-header, .page-navigation {
     align-self: stretch;
+    flex-shrink: 0;
     width: 100%;
 }
 
@@ -158,27 +159,27 @@ ul {
     min-width: 0;
 }
 
-/* Компоненты страницы партнёров */
+/* ///////////////////// Компоненты страницы партнёров */
 
 #partners-page-filler {
+    flex: 1 1 0;
+    width: 100%;
+    min-height: 0;
+
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    min-height: 0;
     overflow: hidden;
 }
 
-#partner-area {
-    flex: 1;
-    min-width: 0;
-}
 
 
 .side-nav {
+    flex: 0 0 280px;
+    min-height: 0;
+
     height: 100%;
     overflow-y: auto;
 
-    width: 280px;
     padding: 24px;
     background-color: inherit;
     color: white;
@@ -197,7 +198,7 @@ ul {
 }
 
 /* стилизация скроллера */
-.side-nav {
+.custom-scrollbar {
     scrollbar-width: thin;
     scrollbar-color: rgba(255,255,255,0.35) transparent;
 }
@@ -290,3 +291,66 @@ ul {
 .nav-level-2 a:hover {
     opacity: 1;
 }
+
+
+/* стилизация секции информации про партнёра */
+
+#partner-area {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 24px;
+}
+
+.partner-content {
+    display: grid;
+    grid-template-columns: minmax(220px, 360px) minmax(320px, 1fr);
+    gap: 32px;
+    align-items: start;
+}
+
+@media (max-width: 1000px) {
+    .partner-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.partner-left-column {
+    max-width: 360px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.partner-right-column {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.partner-left-column img,
+.partner-right-column img {
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.partner-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+}
+
+.partner-long-text {
+    max-width: 100ch;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
