@@ -162,6 +162,9 @@ ul {
 /* ///////////////////// Компоненты страницы партнёров */
 
 #partners-page-filler {
+    --navigation-width: 280px;
+    --collapsed-navigation-width: 48px;
+
     flex: 1 1 0;
     width: 100%;
     min-height: 0;
@@ -171,22 +174,93 @@ ul {
     overflow: hidden;
 }
 
+#navigation-area {
+    flex: 0 0 var(--navigation-width);
+    width: var(--navigation-width);
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    background-color: inherit;
 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    transition:
+        flex-basis 180ms ease,
+        width 180ms ease;
+}
+
+.navigation-area-header {
+    flex: 0 0 auto;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    padding: 10px 14px 10px 20px;
+    background-color: inherit;
+}
+
+.navigation-toggle-button {
+    flex: 0 0 32px;
+    width: 32px;
+    height: 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+
+    font: inherit;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+
+    transition:
+        background-color 150ms ease,
+        transform 150ms ease;
+}
+
+.navigation-toggle-button:hover,
+.navigation-toggle-button:focus-visible {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.navigation-toggle-button:active {
+    transform: scale(0.94);
+}
 
 .side-nav {
-    flex: 0 0 280px;
+    flex: 1 1 auto;
+    width: 100%;
     min-height: 0;
 
-    height: 100%;
+    height: auto;
     overflow-y: auto;
 
-    padding: 24px;
+    padding: 14px 24px 24px;
     background-color: inherit;
     color: white;
 
     display: flex;
     flex-direction: column;
     gap: 14px;
+
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+
+    transition:
+        opacity 120ms ease,
+        transform 180ms ease,
+        visibility 0s linear 0s;
 
     /* вместе со следующим правилом перемещает полоску скроллера влево */
     direction: rtl;
@@ -205,14 +279,59 @@ ul {
 
 
 #navigation-area h2 {
-    margin: 10px 20px;
+    min-width: 0;
+    margin: 0;
     font-size: 24px;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
 
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: inherit;
+    opacity: 1;
+    transition:
+        opacity 120ms ease,
+        width 180ms ease;
+}
 
+#partners-page-filler.navigation-collapsed #navigation-area {
+    flex-basis: var(--collapsed-navigation-width);
+    width: var(--collapsed-navigation-width);
+}
+
+#partners-page-filler.navigation-collapsed .navigation-area-header {
+    justify-content: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#partners-page-filler.navigation-collapsed #navigation-area h2 {
+    width: 0;
+    opacity: 0;
+}
+
+#partners-page-filler.navigation-collapsed .side-nav {
+    opacity: 0;
+    transform: translateX(-12px);
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+        opacity 100ms ease,
+        transform 180ms ease,
+        visibility 0s linear 180ms;
+}
+
+@media (max-width: 700px) {
+    #partners-page-filler {
+        --navigation-width: min(78vw, 280px);
+        --collapsed-navigation-width: 46px;
+    }
+
+    .navigation-area-header {
+        padding-left: 14px;
+    }
+
+    #partner-area {
+        padding: 16px;
+    }
 }
 
 .side-nav ul {

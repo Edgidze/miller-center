@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 
 <html lang="ru">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Miller Center Partners</title>
-<link href="style.css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Miller Center Partners</title>
+    <link href="style.css" rel="stylesheet" />
 </head>
+
 <body>
-<div class="page-contents" id="partners-page-contents">
-<div class="page-header">
-<img alt="Miller Center Logo" id="logo" src="images/miller_logo.png"/>
-</div>
-<div class="page-filler" id="partners-page-filler">
-<div id="navigation-area">
-<h2>Категории</h2>
-<nav aria-label="Miller Center Partners" class="side-nav custom-scrollbar" id="partners-nav"><p class="nav-loading">Загрузка списка организаций…</p></nav>
-</div>
-<div aria-live="polite" class="custom-scrollbar" id="partner-area"><div class="partner-header"><h1 id="partner-title">Выберите организацию</h1></div>
-<div class="partner-content">
-<section class="partner-left-column">
-<img alt="Логотип организации" id="partner-logo" src="images/org_logo.png"/>
-<img alt="Схема расположения" id="partner-map" src="images/plan.jpg"/>
-<div class="partner-info" id="partner-info">
-<p>Выберите организацию в списке слева.</p>
-</div>
-</section>
-<section class="partner-right-column">
-<div class="partner-long-text" id="partner-description">
-<p>Здесь появится описание выбранной организации.</p>
-</div>
-<div class="partner-gallery">
-<img alt="Интерьер организации — временное изображение" src="images/interior.avif"/>
-<img alt="Интерьер организации — временное изображение" src="images/interior2.jpg"/>
-<img alt="Интерьер организации — временное изображение" src="images/interior3.jpg"/>
-</div>
-</section>
-</div>
-</div>
-</div>
-<div class="page-navigation">
-<ul class="navigation-items-list">
-<!-- на экранах уже пикселя возможная проблема, что кнопки навигации в ширину не поместятся- возможно, необходима обработка таких случаев -->
-<li class="navigation-placeholder-short"></li>
-<li class="navigation-button-wrapper"><a class="navigation-button" href="">О нас</a></li>
-<li class="navigation-placeholder"></li>
-<li class="navigation-button-wrapper"><a class="navigation-button" href="index.html">На главную</a></li>
-<li class="navigation-placeholder"></li>
-<li class="navigation-button-wrapper"><a class="navigation-button" href="">Партнёрам</a></li>
-<li class="navigation-placeholder-short"></li>
-</ul>
-</div>
-</div>
-<script defer="True" src="partners.js"></script></body>
+    <div class="page-contents" id="partners-page-contents">
+        <div class="page-header">
+            <img alt="Miller Center Logo" id="logo" src="images/miller_logo.png" />
+        </div>
+        <div class="page-filler" id="partners-page-filler">
+            <div id="navigation-area">
+                <div class="navigation-area-header">
+                    <h2 id="partners-categories-title">Категории</h2>
+                    <button aria-controls="partners-nav" aria-expanded="true" aria-label="Скрыть список категорий"
+                        class="navigation-toggle-button" id="navigation-toggle-button" title="Скрыть список категорий"
+                        type="button">‹</button>
+                </div>
+                <nav aria-label="Miller Center Partners" aria-labelledby="partners-categories-title"
+                    class="side-nav custom-scrollbar" id="partners-nav">
+                    <p class="nav-loading">Загрузка списка организаций…</p>
+                </nav>
+            </div>
+            <div aria-live="polite" class="custom-scrollbar" id="partner-area">
+                <div class="partner-header">
+                    <h1 id="partner-title">Выберите организацию</h1>
+                </div>
+                <div class="partner-content">
+                    <section class="partner-left-column">
+                        <img alt="Логотип организации" id="partner-logo" src="images/org_logo.png" />
+                        <img alt="Схема расположения" id="partner-map" src="images/plan.jpg" />
+                        <div class="partner-info" id="partner-info">
+                            <p>Выберите организацию в списке слева.</p>
+                        </div>
+                    </section>
+                    <section class="partner-right-column">
+                        <div class="partner-long-text" id="partner-description">
+                            <p>Здесь появится описание выбранной организации.</p>
+                        </div>
+                        <div class="partner-gallery">
+                            <img alt="Интерьер организации — временное изображение" src="images/interior.avif" />
+                            <img alt="Интерьер организации — временное изображение" src="images/interior2.jpg" />
+                            <img alt="Интерьер организации — временное изображение" src="images/interior3.jpg" />
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="page-navigation">
+            <ul class="navigation-items-list">
+                <!-- на экранах уже пикселя возможная проблема, что кнопки навигации в ширину не поместятся- возможно, необходима обработка таких случаев -->
+                <li class="navigation-placeholder-short"></li>
+                <li class="navigation-button-wrapper"><a class="navigation-button" href="">О нас</a></li>
+                <li class="navigation-placeholder"></li>
+                <li class="navigation-button-wrapper"><a class="navigation-button" href="index.html">На главную</a></li>
+                <li class="navigation-placeholder"></li>
+                <li class="navigation-button-wrapper"><a class="navigation-button" href="">Партнёрам</a></li>
+                <li class="navigation-placeholder-short"></li>
+            </ul>
+        </div>
+    </div>
+    <script defer="True" src="partners.js"></script>
+</body>
+
 </html>

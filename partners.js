@@ -2,7 +2,9 @@ const PARTNERS_INDEX_URL = "data/partners-index.json";
 const DEFAULT_LOGO_URL = "images/org_logo.png";
 const DEFAULT_MAP_URL = "images/plan.jpg";
 
+const pageFillerElement = document.querySelector("#partners-page-filler");
 const navElement = document.querySelector("#partners-nav");
+const navigationToggleButton = document.querySelector("#navigation-toggle-button");
 const titleElement = document.querySelector("#partner-title");
 const logoElement = document.querySelector("#partner-logo");
 const mapElement = document.querySelector("#partner-map");
@@ -11,6 +13,22 @@ const descriptionElement = document.querySelector("#partner-description");
 
 const partnerCache = new Map();
 let partnerIndex = null;
+
+function setNavigationCollapsed(isCollapsed) {
+    pageFillerElement.classList.toggle("navigation-collapsed", isCollapsed);
+    navigationToggleButton.textContent = isCollapsed ? "›" : "‹";
+    navigationToggleButton.setAttribute("aria-expanded", String(!isCollapsed));
+    navigationToggleButton.setAttribute(
+        "aria-label",
+        isCollapsed ? "Показать список категорий" : "Скрыть список категорий"
+    );
+    navigationToggleButton.title = isCollapsed ? "Показать список категорий" : "Скрыть список категорий";
+}
+
+navigationToggleButton.addEventListener("click", () => {
+    const isCollapsed = pageFillerElement.classList.contains("navigation-collapsed");
+    setNavigationCollapsed(!isCollapsed);
+});
 
 function setStatus(message) {
     titleElement.textContent = message;
