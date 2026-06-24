@@ -340,7 +340,7 @@ ul {
    If you change the 400px value here, change NARROW_SCREEN_QUERY in
    for-guests.js to the SAME value so the JS auto-collapse stays in sync.
    ========================================================================== */
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     /* While the navigation is OPEN, give it the full width and hide the
        partner area. When the navigation is collapsed (an item was selected /
        it was closed), the partner area returns to full width and shows. */
@@ -432,11 +432,23 @@ ul {
 }
 
 
-/* стилизация секции информации про партнёра */
+/* стилизация секции информации про партнёра / о центре */
 
+/* Страница «О нас»: основной блок занимает всю ширину (навигации нет),
+   поэтому .page-filler здесь делаем flex-контейнером, чтобы .content-area
+   с flex:1 растянулся на всю доступную область. */
+#about-page-filler {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
 
-
-#partner-area {
+/* Общий блок основного контента: используется и на странице партнёров
+   (#partner-area внутри .page-filler рядом с навигацией), и на странице
+   «О нас» (#about-area, занимающий всю ширину .page-filler).
+   Это прокручиваемый контейнер с отступами и container-type для того,
+   чтобы заголовок мог масштабироваться через cqw. */
+.content-area {
     flex: 1 1 0;
     min-width: 0;
     min-height: 0;

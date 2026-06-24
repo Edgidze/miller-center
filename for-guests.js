@@ -5,7 +5,7 @@ const DEFAULT_MAP_URL = "images/plan.jpg";
 /* Width at/below which the open navigation overlays the full screen and the
    partner content is hidden. MUST match the "NAVIGATION OVERLAY BREAKPOINT"
    media query in style.css. Change both together. */
-const NARROW_SCREEN_QUERY = "(max-width: 500px)";
+const NARROW_SCREEN_QUERY = "(max-width: 400px)";
 
 const pageFillerElement = document.querySelector("#partners-page-filler");
 const navElement = document.querySelector("#partners-nav");
