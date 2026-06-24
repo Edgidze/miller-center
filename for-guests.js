@@ -3,7 +3,7 @@ const DEFAULT_LOGO_URL = "images/org_logo.png";
 const DEFAULT_MAP_URL = "images/plan.jpg";
 
 /* Width at/below which the open navigation overlays the full screen and the
-   partner content is hidden. MUST match the "NAVIGATION OVERLAY BREAKPOINT"
+   content area is hidden. MUST match the "NAVIGATION OVERLAY BREAKPOINT"
    media query in style.css. Change both together. */
 const NARROW_SCREEN_QUERY = "(max-width: 400px)";
 
@@ -203,7 +203,7 @@ navElement.addEventListener("click", (event) => {
         selectPartner(org);
 
         // On narrow screens the open navigation covers the full width and the
-        // partner content is hidden. Once a category is chosen, collapse the
+        // content area is hidden. Once a category is chosen, collapse the
         // navigation so the selected organization's content becomes visible.
         if (window.matchMedia(NARROW_SCREEN_QUERY).matches) {
             setNavigationCollapsed(true);

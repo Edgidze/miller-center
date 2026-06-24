@@ -432,7 +432,8 @@ ul {
 }
 
 
-/* стилизация секции информации про партнёра / о центре */
+/* стилизация общего блока материалов (используется на страницах
+   «Гостям» и «О нас»: заголовок, две колонки, галерея, текст) */
 
 /* Страница «О нас»: основной блок занимает всю ширину (навигации нет),
    поэтому .page-filler здесь делаем flex-контейнером, чтобы .content-area
@@ -460,13 +461,13 @@ ul {
     container-type: inline-size;
 }
 
-.partner-header {
+.material-header {
     margin-top: 24px;
     margin-bottom: 24px;
     max-width: 100%;
 }
 
-.partner-header h1 {
+.material-header h1 {
     margin: 0;
     font-size: clamp(24px, 8cqw, 56px);
     line-height: 1.1;
@@ -474,7 +475,7 @@ ul {
     overflow-wrap: anywhere;
 }
 
-.partner-content {
+.material-content {
     display: grid;
     grid-template-columns: minmax(220px, 360px) minmax(320px, 1fr);
     gap: 32px;
@@ -482,13 +483,13 @@ ul {
 }
 
 @media (max-width: 1000px) {
-    .partner-content {
+    .material-content {
         grid-template-columns: 1fr;
     }
 }
 
 
-.partner-left-column {
+.material-left-column {
     max-width: 360px;
 
     display: flex;
@@ -496,7 +497,7 @@ ul {
     gap: 16px;
 }
 
-.partner-right-column {
+.material-right-column {
     min-width: 0;
 
     display: flex;
@@ -504,20 +505,20 @@ ul {
     gap: 20px;
 }
 
-.partner-left-column img,
-.partner-right-column img {
+.material-left-column img,
+.material-right-column img {
     max-width: 100%;
     display: block;
     border-radius: 12px;
 }
 
-.partner-gallery {
+.material-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 16px;
 }
 
-.partner-long-text {
+.material-long-text {
     max-width: 100ch;
     margin-left: auto;
     margin-right: auto;
@@ -544,23 +545,23 @@ ul {
     text-underline-offset: 4px;
 }
 
-.partner-info {
+.material-info {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.partner-info p {
+.material-info p {
     margin: 0;
     line-height: 1.35;
 }
 
-.partner-info a,
-.partner-long-text a {
+.material-info a,
+.material-long-text a {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
 
-.partner-additional-info {
+.material-additional-info {
     font-weight: 600;
 }
