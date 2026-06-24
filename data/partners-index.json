@@ -1,0 +1,483 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Магазины",
+      "categories": [
+        {
+          "id": "1-1",
+          "title": "Женская одежда и белье",
+          "organizations": [
+            {
+              "id": "1-1-b-1-6",
+              "title": "ОКСФОРДСТРИТ",
+              "dataUrl": "data/organizations/1-1-b-1-6/organization.json"
+            },
+            {
+              "id": "1-1-a-2-9",
+              "title": "Nova",
+              "dataUrl": "data/organizations/1-1-a-2-9/organization.json"
+            },
+            {
+              "id": "1-1-a-2-13",
+              "title": "ValeRo. Женская одежда",
+              "dataUrl": "data/organizations/1-1-a-2-13/organization.json"
+            },
+            {
+              "id": "1-1-b-2-1",
+              "title": "OLSEN. Женская одежда",
+              "dataUrl": "data/organizations/1-1-b-2-1/organization.json"
+            },
+            {
+              "id": "1-1-b-2-7",
+              "title": "Эстель Адони. Женское белье",
+              "dataUrl": "data/organizations/1-1-b-2-7/organization.json"
+            },
+            {
+              "id": "1-1-b-2-8",
+              "title": "ДИОНА. Одежда от Европейских Дизайнеров",
+              "dataUrl": "data/organizations/1-1-b-2-8/organization.json"
+            },
+            {
+              "id": "1-1-b-2-13-1",
+              "title": "S-T. Женская одежда",
+              "dataUrl": "data/organizations/1-1-b-2-13-1/organization.json"
+            },
+            {
+              "id": "1-1-b-2-18-1",
+              "title": "NOVA. Женская одежда",
+              "dataUrl": "data/organizations/1-1-b-2-18-1/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "1-2",
+          "title": "Мужская одежда",
+          "organizations": [
+            {
+              "id": "1-2-b-1-13",
+              "title": "DIPLOMAT",
+              "dataUrl": "data/organizations/1-2-b-1-13/organization.json"
+            },
+            {
+              "id": "1-2-b-2-9",
+              "title": "Gecco. Верхняя одежда из кожи",
+              "dataUrl": "data/organizations/1-2-b-2-9/organization.json"
+            },
+            {
+              "id": "1-2-b-2-17",
+              "title": "GECCO. Одежда из кожи",
+              "dataUrl": "data/organizations/1-2-b-2-17/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "1-3",
+          "title": "Детские товары",
+          "organizations": [
+            {
+              "id": "1-3-a-3-11",
+              "title": "Andersen. Книжный магазин.",
+              "dataUrl": "data/organizations/1-3-a-3-11/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "1-4",
+          "title": "Обувь и кожгалантерея",
+          "organizations": [
+            {
+              "id": "1-4-b-1-1",
+              "title": "Уютный дом. Постельное белье",
+              "dataUrl": "data/organizations/1-4-b-1-1/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "1-5",
+          "title": "Косметика и парфюмерия",
+          "organizations": [
+            {
+              "id": "1-5-a-1-9",
+              "title": "Индустрия красоты. Профессиональная косметика.",
+              "dataUrl": "data/organizations/1-5-a-1-9/organization.json"
+            },
+            {
+              "id": "1-5-c-3-1",
+              "title": "Best of Korea. Корейская косметика",
+              "dataUrl": "data/organizations/1-5-c-3-1/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "1-6",
+          "title": "Хобби-магазины",
+          "organizations": [
+            {
+              "id": "1-6-a-3-12",
+              "title": "Крафтотека",
+              "dataUrl": "data/organizations/1-6-a-3-12/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "1-7",
+          "title": "Сувениры, подарки, товары для дома",
+          "organizations": [
+            {
+              "id": "1-7-c-1-1",
+              "title": "Галерея Аметист",
+              "dataUrl": "data/organizations/1-7-c-1-1/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "1-9",
+          "title": "Ювелирные изделия",
+          "organizations": [
+            {
+              "id": "1-9-a-2-6-1",
+              "title": "Dimond sky. Ювелирный салон",
+              "dataUrl": "data/organizations/1-9-a-2-6-1/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "1-10",
+          "title": "Продукты питания и аптеки",
+          "organizations": [
+            {
+              "id": "1-10-a-1-6",
+              "title": "Фиалка. Аптека.",
+              "dataUrl": "data/organizations/1-10-a-1-6/organization.json"
+            },
+            {
+              "id": "1-10-a-1-7",
+              "title": "Фиалка. Аптека.",
+              "dataUrl": "data/organizations/1-10-a-1-7/organization.json"
+            },
+            {
+              "id": "1-10-b-1-7",
+              "title": "Империал вин",
+              "dataUrl": "data/organizations/1-10-b-1-7/organization.json"
+            },
+            {
+              "id": "1-10-c-1-2",
+              "title": "FITNESS BAR",
+              "dataUrl": "data/organizations/1-10-c-1-2/organization.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Досуг",
+      "categories": [
+        {
+          "id": "2-1",
+          "title": "Рестораны, клубы, бары, кафе",
+          "organizations": [
+            {
+              "id": "2-1-a-0-1",
+              "title": "Ponte alla Cascata. Траттория",
+              "dataUrl": "data/organizations/2-1-a-0-1/organization.json"
+            },
+            {
+              "id": "2-1-a-0-3",
+              "title": "Pizza Roni",
+              "dataUrl": "data/organizations/2-1-a-0-3/organization.json"
+            },
+            {
+              "id": "2-1-b-0-1",
+              "title": "School - club",
+              "dataUrl": "data/organizations/2-1-b-0-1/organization.json"
+            },
+            {
+              "id": "2-1-b-0-5",
+              "title": "Молли. Ирландский паб",
+              "dataUrl": "data/organizations/2-1-b-0-5/organization.json"
+            },
+            {
+              "id": "2-1-b-0-6",
+              "title": "Jolly bar. Кальянная.",
+              "dataUrl": "data/organizations/2-1-b-0-6/organization.json"
+            },
+            {
+              "id": "2-1-b-1-10",
+              "title": "Чито Гврито. Ресторан грузинской кухни",
+              "dataUrl": "data/organizations/2-1-b-1-10/organization.json"
+            },
+            {
+              "id": "2-1-c-1-7",
+              "title": "BAGGINS COFFEE",
+              "dataUrl": "data/organizations/2-1-c-1-7/organization.json"
+            },
+            {
+              "id": "2-1-b-3-19",
+              "title": "Coffeeshop Company. Кофейня",
+              "dataUrl": "data/organizations/2-1-b-3-19/organization.json"
+            },
+            {
+              "id": "2-1-c-3-4",
+              "title": "Gagarin. Ретро Дискотека",
+              "dataUrl": "data/organizations/2-1-c-3-4/organization.json"
+            },
+            {
+              "id": "2-1-c-4-8-1",
+              "title": "КвакИнн. Бельгийское пивное кафе",
+              "dataUrl": "data/organizations/2-1-c-4-8-1/organization.json"
+            },
+            {
+              "id": "2-1-c-4-22",
+              "title": "“Кореана”",
+              "dataUrl": "data/organizations/2-1-c-4-22/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "2-2",
+          "title": "Антикафе",
+          "organizations": [
+            {
+              "id": "2-2-c-4-3",
+              "title": "Feromon",
+              "dataUrl": "data/organizations/2-2-c-4-3/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "2-3",
+          "title": "Развлечения для детей",
+          "organizations": [
+            {
+              "id": "2-3-a-3-3",
+              "title": "Кот Вильям. Детский театр.",
+              "dataUrl": "data/organizations/2-3-a-3-3/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "2-4",
+          "title": "Развлечения для взрослых",
+          "organizations": [
+            {
+              "id": "2-4-c-4-5",
+              "title": "ФОНБЕТ. Букмекерская контора",
+              "dataUrl": "data/organizations/2-4-c-4-5/organization.json"
+            },
+            {
+              "id": "2-4-c-4-24",
+              "title": "БАЛТБЕТ. Букмекерская контора.",
+              "dataUrl": "data/organizations/2-4-c-4-24/organization.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Услуги",
+      "categories": [
+        {
+          "id": "3-1",
+          "title": "Красота и здоровье",
+          "organizations": [
+            {
+              "id": "3-1-b-1-14",
+              "title": "Market Do4a",
+              "dataUrl": "data/organizations/3-1-b-1-14/organization.json"
+            },
+            {
+              "id": "3-1-a-3-14-1",
+              "title": "ЛАК. Маникюрный салон",
+              "dataUrl": "data/organizations/3-1-a-3-14-1/organization.json"
+            },
+            {
+              "id": "3-1-c-3-3",
+              "title": "Центр Аэройоги",
+              "dataUrl": "data/organizations/3-1-c-3-3/organization.json"
+            },
+            {
+              "id": "3-1-c-3-8",
+              "title": "Hairmarket Studio&Store Имидж студия",
+              "dataUrl": "data/organizations/3-1-c-3-8/organization.json"
+            },
+            {
+              "id": "3-1-c-3-25",
+              "title": "Эластика. Студия растяжки",
+              "dataUrl": "data/organizations/3-1-c-3-25/organization.json"
+            },
+            {
+              "id": "3-1-c-3-28",
+              "title": "Lash&Brow Bar. Студия стилистики бровей и ресниц",
+              "dataUrl": "data/organizations/3-1-c-3-28/organization.json"
+            },
+            {
+              "id": "3-1-c-3-29",
+              "title": "Barbershop 812. Мужская парикмахерская",
+              "dataUrl": "data/organizations/3-1-c-3-29/organization.json"
+            },
+            {
+              "id": "3-1-c-3-30",
+              "title": "Студия депиляции Sahar&Vosk",
+              "dataUrl": "data/organizations/3-1-c-3-30/organization.json"
+            },
+            {
+              "id": "3-1-c-3-31",
+              "title": "ALEX BEAUTY. студия LPG массажа",
+              "dataUrl": "data/organizations/3-1-c-3-31/organization.json"
+            },
+            {
+              "id": "3-1-c-3-32",
+              "title": "Невесомость. Флоатинг студия",
+              "dataUrl": "data/organizations/3-1-c-3-32/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "3-2",
+          "title": "Обучающие курсы,языковые школы",
+          "organizations": [
+            {
+              "id": "3-2-a-3-3-1",
+              "title": "Роббо клуб. Школа робототехники",
+              "dataUrl": "data/organizations/3-2-a-3-3-1/organization.json"
+            },
+            {
+              "id": "3-2-a-3-4",
+              "title": "Todes",
+              "dataUrl": "data/organizations/3-2-a-3-4/organization.json"
+            },
+            {
+              "id": "3-2-a-3-5",
+              "title": "Мамино место. Развивающие активности",
+              "dataUrl": "data/organizations/3-2-a-3-5/organization.json"
+            },
+            {
+              "id": "3-2-a-3-14",
+              "title": "Dance Masters. Школа танцев",
+              "dataUrl": "data/organizations/3-2-a-3-14/organization.json"
+            },
+            {
+              "id": "3-2-a-3-15",
+              "title": "Супер развитие. Детский центр коррекции речи и пов",
+              "dataUrl": "data/organizations/3-2-a-3-15/organization.json"
+            },
+            {
+              "id": "3-2-c-2-6k",
+              "title": "Speak&Travel. Иностранные языки",
+              "dataUrl": "data/organizations/3-2-c-2-6k/organization.json"
+            },
+            {
+              "id": "3-2-c-2-8k",
+              "title": "Коннесанс. Учебный центр",
+              "dataUrl": "data/organizations/3-2-c-2-8k/organization.json"
+            },
+            {
+              "id": "3-2-c-2-9k",
+              "title": "О'Пять Пятёрка. Центр ЕГЭ/ОГЭ",
+              "dataUrl": "data/organizations/3-2-c-2-9k/organization.json"
+            },
+            {
+              "id": "3-2-c-3-8k",
+              "title": "Междунардная бизнес академия",
+              "dataUrl": "data/organizations/3-2-c-3-8k/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "3-3",
+          "title": "Финансовые услуги, страхование",
+          "organizations": [
+            {
+              "id": "3-3-c-1-3",
+              "title": "Сетелем Банк",
+              "dataUrl": "data/organizations/3-3-c-1-3/organization.json"
+            },
+            {
+              "id": "3-3-c-3-1k",
+              "title": "Финансовая помощь",
+              "dataUrl": "data/organizations/3-3-c-3-1k/organization.json"
+            },
+            {
+              "id": "3-3-c-3-5k",
+              "title": "Центр Займов",
+              "dataUrl": "data/organizations/3-3-c-3-5k/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "3-4",
+          "title": "Юридические услуги",
+          "organizations": [
+            {
+              "id": "3-4-a-4-1k",
+              "title": "Адвокатская палата Гавриленко О.В.",
+              "dataUrl": "data/organizations/3-4-a-4-1k/organization.json"
+            },
+            {
+              "id": "3-4-a-4-11k",
+              "title": "Приморский юридический центр",
+              "dataUrl": "data/organizations/3-4-a-4-11k/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "3-5",
+          "title": "Туризм, авиа и ж/д билеты",
+          "organizations": [
+            {
+              "id": "3-5-a-4-17k",
+              "title": "Inturist. Турфирма",
+              "dataUrl": "data/organizations/3-5-a-4-17k/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "3-7",
+          "title": "Интернет-магазины. Пункты выдачи.",
+          "organizations": [
+            {
+              "id": "3-7-c-2-38k",
+              "title": "Лабиринт (книжный интернет-магазин)",
+              "dataUrl": "data/organizations/3-7-c-2-38k/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "3-8",
+          "title": "Бытовые услуги",
+          "organizations": [
+            {
+              "id": "3-8-a-4-10k",
+              "title": "Гранитный завод №1",
+              "dataUrl": "data/organizations/3-8-a-4-10k/organization.json"
+            },
+            {
+              "id": "3-8-a-4-12k",
+              "title": "ООО МКК \"ФИНАНСОВЫЙ АССИСТЕНТ\"",
+              "dataUrl": "data/organizations/3-8-a-4-12k/organization.json"
+            }
+          ]
+        },
+        {
+          "id": "3-10",
+          "title": "Мобильная связь, ремонт сотовых телефонов и техники",
+          "organizations": [
+            {
+              "id": "3-10-c-2-41k",
+              "title": "Original Phone. Мобильные телефоны и аксессуары",
+              "dataUrl": "data/organizations/3-10-c-2-41k/organization.json"
+            },
+            {
+              "id": "3-10-a-4-4k",
+              "title": "Maclab. Сервисный центр Apple",
+              "dataUrl": "data/organizations/3-10-a-4-4k/organization.json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

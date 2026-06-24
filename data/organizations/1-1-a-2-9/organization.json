@@ -1,0 +1,13 @@
+{
+  "name": "Nova",
+  "sourceFile": "page/orglist/1-1/a_2_9.html",
+  "sourceMissing": false,
+  "logo": "data/organizations/1-1-a-2-9/logo.jpg",
+  "infoHtml": "<p>Корпус A, 2 этаж,</p>\n<p>Секция: A-2-9</p>\n<p>Время работы: 10.00 - 22.00</p>\n<p></p>",
+  "descriptionHtml": "<p></p>",
+  "id": "1-1-a-2-9",
+  "categoryId": "1-1",
+  "categoryTitle": "Женская одежда и белье",
+  "sectionTitle": "Магазины",
+  "listTitle": "Nova"
+}

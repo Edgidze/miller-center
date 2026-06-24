@@ -1,0 +1,13 @@
+{
+  "name": "FITNESS BAR",
+  "sourceFile": "page/orglist/1-10/c_1_2.html",
+  "sourceMissing": false,
+  "logo": "data/organizations/1-10-c-1-2/logo.jpg",
+  "infoHtml": "<p>Корпус C, 1 этаж,</p>\n<p>Секция: C-1-2</p>\n<p>Время работы: c 10.00 - 22.00</p>\n<p>Телефон: +7 (812) 244-02-00 доб.203</p>\n<p><a href=\"https://www.fitnessbar.ru/\" rel=\"noopener\" target=\"_blank\">https://www.fitnessbar.ru/</a></p>",
+  "descriptionHtml": "<p>ИНТЕРНЕТ МАГАЗИН СПОРТИВНОГО ПИТАНИЯ FITNESSBAR.RU</p>",
+  "id": "1-10-c-1-2",
+  "categoryId": "1-10",
+  "categoryTitle": "Продукты питания и аптеки",
+  "sectionTitle": "Магазины",
+  "listTitle": "FITNESS BAR"
+}

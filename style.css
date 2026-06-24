@@ -372,3 +372,44 @@ ul {
     line-height: 1.5;
 }
 
+
+
+/* Динамическая страница партнёров */
+.nav-loading {
+    opacity: 0.75;
+    font-size: 14px;
+}
+
+.partner-link {
+    display: block;
+    padding: 3px 0;
+    border-radius: 4px;
+}
+
+.partner-link.active {
+    opacity: 1;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.partner-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.partner-info p {
+    margin: 0;
+    line-height: 1.35;
+}
+
+.partner-info a,
+.partner-long-text a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.partner-additional-info {
+    font-weight: 600;
+}
