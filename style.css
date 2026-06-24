@@ -334,6 +334,26 @@ ul {
     }
 }
 
+/* === NAVIGATION OVERLAY BREAKPOINT ===========================================
+   Single source of truth for the width below which the open navigation takes
+   over the full screen and the partner content is hidden (to avoid crumpling).
+   If you change the 400px value here, change NARROW_SCREEN_QUERY in
+   for-guests.js to the SAME value so the JS auto-collapse stays in sync.
+   ========================================================================== */
+@media (max-width: 500px) {
+    /* While the navigation is OPEN, give it the full width and hide the
+       partner area. When the navigation is collapsed (an item was selected /
+       it was closed), the partner area returns to full width and shows. */
+    #partners-page-filler:not(.navigation-collapsed) #navigation-area {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    #partners-page-filler:not(.navigation-collapsed) #partner-area {
+        display: none;
+    }
+}
+
 .side-nav ul {
     list-style-type: none;
     margin: 0;
@@ -455,6 +475,7 @@ ul {
     }
 }
 
+
 .partner-left-column {
     max-width: 360px;
 
@@ -490,7 +511,6 @@ ul {
     margin-right: auto;
     line-height: 1.5;
 }
-
 
 
 /* Динамическая страница партнёров */
