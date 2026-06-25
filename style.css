@@ -37,10 +37,17 @@ ul {
 
 
 
+/* Максимальная ширина контента на всех страницах. На очень широких экранах
+   шапка, основной блок и навигация не растягиваются шире 1400px и центрируются,
+   а фон (тёмный цвет .page-contents) заполняет пространство по краям. */
+:root {
+    --content-max-width: 1400px;
+}
+
 .page-header, .page-navigation {
-    align-self: stretch;
     flex-shrink: 0;
     width: 100%;
+    max-width: var(--content-max-width);
 }
 
 
@@ -66,10 +73,15 @@ ul {
 .page-filler {
     flex: 1;
     width: 100%;
+    max-width: var(--content-max-width);
     min-height: 0;
 }
 
 #main-page-filler {
+
+    /* Фоновое фото на главной — во всю ширину экрана, без ограничения 1400px
+       (ограничение применяется к шапке и навигации, но не к hero-изображению). */
+    max-width: none;
 
     background-image:
         linear-gradient(to bottom, rgb(48, 48, 48) 0px, transparent 39px),
@@ -489,7 +501,7 @@ ul {
 }
 
 
-.material-left-column {
+.material-fixed-column {
     max-width: 360px;
 
     display: flex;
@@ -497,7 +509,7 @@ ul {
     gap: 16px;
 }
 
-.material-right-column {
+.material-scalable-column {
     min-width: 0;
 
     display: flex;
@@ -505,8 +517,8 @@ ul {
     gap: 20px;
 }
 
-.material-left-column img,
-.material-right-column img {
+.material-fixed-column img,
+.material-scalable-column img {
     max-width: 100%;
     display: block;
     border-radius: 12px;
@@ -514,7 +526,7 @@ ul {
 
 .material-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 16px;
 }
 
