@@ -2,7 +2,7 @@
   "name": "Крафтотека",
   "sourceFile": "page/orglist/1-6/a_3_12.html",
   "sourceMissing": false,
-  "logo": "data/organizations/1-6-a-3-12/logo.jpg",
+  "logo": "data/organizations/1-6-a-3-12/logo.svg",
   "infoHtml": "<p>Корпус A, 3 этаж,</p>\n<p>Секция: A-3-12</p>\n<p>Время работы: 10.00 - 22.00</p>\n<p><a href=\"https://www.livemaster.ru/kraftoteka-1/policy\" rel=\"noopener\" target=\"_blank\">https://www.livemaster.ru/kraftoteka-1/policy</a></p>",
   "descriptionHtml": "<p>Хобби, слаймы, крафт. шармы, бромы и т.п.</p>",
   "id": "1-6-a-3-12",
