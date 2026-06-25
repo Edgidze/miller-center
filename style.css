@@ -176,6 +176,21 @@ ul {
     min-width: 0;
 }
 
+/* Кнопка текущей страницы — подсвечена (залита), чтобы было видно, где вы. */
+.navigation-button[aria-current="page"] {
+    background-color: white;
+    color: rgb(48, 48, 48);
+    font-weight: 600;
+}
+
+.navigation-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navigation-button[aria-current="page"]:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
 /* ///////////////////// Компоненты страницы партнёров */
 
 #partners-page-filler {

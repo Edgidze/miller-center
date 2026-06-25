@@ -205,16 +205,50 @@ navElement.addEventListener("click", (event) => {
     event.preventDefault();
     const org = findOrgById(link.dataset.orgId);
     if (org) {
-        history.replaceState(null, "", `#${org.id}`);
-        selectPartner(org);
+        const isNarrow = window.matchMedia(NARROW_SCREEN_QUERY).matches;
 
-        // On narrow screens the open navigation covers the full width and the
-        // content area is hidden. Once a category is chosen, collapse the
-        // navigation so the selected organization's content becomes visible.
-        if (window.matchMedia(NARROW_SCREEN_QUERY).matches) {
+        if (isNarrow) {
+            // На узких экранах выбор организации ощущается как переход на
+            // отдельную «страницу» с информацией. Добавляем запись в историю,
+            // чтобы кнопка «назад» возвращала к списку организаций, а не уводила
+            // с этой html-страницы.
+            history.pushState({ view: "org", id: org.id }, "", `#${org.id}`);
+            selectPartner(org);
             setNavigationCollapsed(true);
+        } else {
+            // На широких экранах список и информация видны одновременно —
+            // отдельная запись в истории не нужна.
+            history.replaceState({ view: "org", id: org.id }, "", `#${org.id}`);
+            selectPartner(org);
         }
     }
+});
+
+/* Кнопка «назад» телефона: если мы вернулись к состоянию без выбранной
+   организации (список), на узком экране снова показываем список организаций
+   вместо ухода со страницы. */
+window.addEventListener("popstate", (event) => {
+    const state = event.state;
+    const isNarrow = window.matchMedia(NARROW_SCREEN_QUERY).matches;
+
+    if (state && state.view === "org") {
+        // Вернулись (или вперёд) к конкретной организации.
+        const org = findOrgById(state.id);
+        if (org) {
+            selectPartner(org);
+            if (isNarrow) {
+                setNavigationCollapsed(true);
+            }
+            return;
+        }
+    }
+
+    // Нет выбранной организации — показываем список (раскрываем навигацию)
+    // и заглушку с просьбой выбрать организацию.
+    if (isNarrow) {
+        setNavigationCollapsed(false);
+    }
+    showPlaceholder("Выберите организацию в списке слева.");
 });
 
 async function initPartnersPage() {
@@ -229,12 +263,23 @@ async function initPartnersPage() {
 
         const requestedId = decodeURIComponent(window.location.hash.replace("#", ""));
         const requestedOrg = requestedId ? findOrgById(requestedId) : null;
+        const isNarrow = window.matchMedia(NARROW_SCREEN_QUERY).matches;
 
         if (requestedOrg) {
             // Переход по прямой ссылке (#id) — сразу показываем организацию.
+            // На узком экране оставляем «список» как базовую запись истории,
+            // а организацию добавляем сверху, чтобы «назад» вёл к списку.
+            if (isNarrow) {
+                history.replaceState({ view: "list" }, "", window.location.pathname);
+                history.pushState({ view: "org", id: requestedOrg.id }, "", `#${requestedOrg.id}`);
+                setNavigationCollapsed(true);
+            } else {
+                history.replaceState({ view: "org", id: requestedOrg.id }, "", `#${requestedOrg.id}`);
+            }
             await selectPartner(requestedOrg);
         } else {
             // Первый заход без выбора — показываем розетку с просьбой выбрать.
+            history.replaceState({ view: "list" }, "", window.location.pathname);
             showPlaceholder("Выберите организацию в списке слева.");
         }
     } catch (error) {
