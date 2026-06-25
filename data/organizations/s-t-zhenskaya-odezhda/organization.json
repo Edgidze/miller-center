@@ -1,0 +1,13 @@
+{
+  "name": "S-T. Женская одежда",
+  "sourceFile": "page/orglist/1-1/b_2_13_1.html",
+  "sourceMissing": false,
+  "logo": "data/organizations/s-t-zhenskaya-odezhda/placeholder.svg",
+  "infoHtml": "<p>Корпус B, 2 этаж,</p>\n<p>Секция: B-2-13/1</p>\n<p>Время работы: с 10-00 до 22-00</p>\n<p></p>",
+  "descriptionHtml": "<p>Магазин одежды для женщин</p>",
+  "id": "s-t-zhenskaya-odezhda",
+  "categoryId": "1-1",
+  "categoryTitle": "Женская одежда и белье",
+  "sectionTitle": "Магазины",
+  "listTitle": "S-T. Женская одежда"
+}

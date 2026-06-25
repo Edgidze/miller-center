@@ -1,0 +1,13 @@
+{
+  "name": "Финансовая помощь",
+  "sourceFile": "page/orglist/3-3/c_3_1k.html",
+  "sourceMissing": false,
+  "logo": "data/organizations/finansovaya-pomoshch/placeholder.svg",
+  "infoHtml": "<p>Корпус C, 3 этаж,</p>\n<p>Секция: C-3-1k</p>\n<p></p>",
+  "descriptionHtml": "<p></p>",
+  "id": "finansovaya-pomoshch",
+  "categoryId": "3-3",
+  "categoryTitle": "Финансовые услуги, страхование",
+  "sectionTitle": "Услуги",
+  "listTitle": "Финансовая помощь"
+}

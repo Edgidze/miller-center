@@ -1,0 +1,13 @@
+{
+  "name": "BAGGINS COFFEE",
+  "sourceFile": "page/orglist/2-1/c_1_7.html",
+  "sourceMissing": false,
+  "logo": "data/organizations/baggins-coffee/placeholder.svg",
+  "infoHtml": "<p>Корпус C, 1 этаж,</p>\n<p>Секция: C-1-7</p>\n<p>Время работы: с 10-00 до 22-00</p>\n<p><a href=\"https://vk.com/bagginscoffee\" rel=\"noopener\" target=\"_blank\">https://vk.com/bagginscoffee</a></p>",
+  "descriptionHtml": "<p>Кофе на вынос из 100% Арабики.</p>",
+  "id": "baggins-coffee",
+  "categoryId": "2-1",
+  "categoryTitle": "Рестораны, клубы, бары, кафе",
+  "sectionTitle": "Досуг",
+  "listTitle": "BAGGINS COFFEE"
+}

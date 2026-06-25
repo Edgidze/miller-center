@@ -1,0 +1,13 @@
+{
+  "name": "Todes",
+  "sourceFile": "page/orglist/3-2/a_3_4.html",
+  "sourceMissing": false,
+  "logo": "data/organizations/todes/logo.png",
+  "infoHtml": "<p>Корпус A, 3 этаж,</p>\n<p>Секция: A-3-4</p>\n<p>Время работы: с 10.00 - 22.00</p>\n<p>Телефон: 7 (812) 923-03-66</p>\n<p><a href=\"https://todes.ru\" rel=\"noopener\" target=\"_blank\">https://todes.ru</a></p>",
+  "descriptionHtml": "<p>Школа TODES Северо-Запад  открылась в 2011 году. За этот период воспитанники школы показали отличные результаты на открытых уроках школ TODES и успели завоевать множество наград на Всероссийских Фестивалях TODES.</p>",
+  "id": "todes",
+  "categoryId": "3-2",
+  "categoryTitle": "Обучающие курсы,языковые школы",
+  "sectionTitle": "Услуги",
+  "listTitle": "Todes"
+}

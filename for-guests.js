@@ -1,5 +1,5 @@
 const PARTNERS_INDEX_URL = "data/partners-index.json";
-const DEFAULT_LOGO_URL = "images/decor-rosette.svg";
+const DEFAULT_LOGO_URL = "images/org_logo.png";
 const DEFAULT_MAP_URL = "images/plan.jpg";
 
 /* Width at/below which the open navigation overlays the full screen and the
