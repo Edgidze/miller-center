@@ -42,11 +42,6 @@
               "id": "1-1-b-2-13-1",
               "title": "S-T. Женская одежда",
               "dataUrl": "data/organizations/1-1-b-2-13-1/organization.json"
-            },
-            {
-              "id": "1-1-b-2-18-1",
-              "title": "NOVA. Женская одежда",
-              "dataUrl": "data/organizations/1-1-b-2-18-1/organization.json"
             }
           ]
         },
@@ -58,11 +53,6 @@
               "id": "1-2-b-1-13",
               "title": "DIPLOMAT",
               "dataUrl": "data/organizations/1-2-b-1-13/organization.json"
-            },
-            {
-              "id": "1-2-b-2-9",
-              "title": "Gecco. Верхняя одежда из кожи",
-              "dataUrl": "data/organizations/1-2-b-2-9/organization.json"
             },
             {
               "id": "1-2-b-2-17",
@@ -150,11 +140,6 @@
               "id": "1-10-a-1-6",
               "title": "Фиалка. Аптека.",
               "dataUrl": "data/organizations/1-10-a-1-6/organization.json"
-            },
-            {
-              "id": "1-10-a-1-7",
-              "title": "Фиалка. Аптека.",
-              "dataUrl": "data/organizations/1-10-a-1-7/organization.json"
             },
             {
               "id": "1-10-b-1-7",
