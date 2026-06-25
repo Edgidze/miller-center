@@ -16,6 +16,9 @@ const mapElement = document.querySelector("#partner-map");
 const infoElement = document.querySelector("#partner-info");
 const descriptionElement = document.querySelector("#partner-description");
 
+const partnerAreaElement = document.querySelector("#partner-area");
+const placeholderTextElement = document.querySelector("#partner-placeholder-text");
+
 const partnerCache = new Map();
 let partnerIndex = null;
 
@@ -35,13 +38,18 @@ navigationToggleButton.addEventListener("click", () => {
     setNavigationCollapsed(!isCollapsed);
 });
 
-function setStatus(message) {
-    titleElement.textContent = message;
-    logoElement.src = DEFAULT_LOGO_URL;
-    logoElement.alt = "Логотип организации";
-    mapElement.src = DEFAULT_MAP_URL;
-    infoElement.innerHTML = `<p>${message}</p>`;
-    descriptionElement.innerHTML = "";
+/* Показывает заглушку с розеткой и подписью поверх области партнёра,
+   скрывая обычное содержимое (логотип, схему, описание, галерею). */
+function showPlaceholder(message) {
+    placeholderTextElement.textContent = message;
+    partnerAreaElement.classList.add("showing-placeholder");
+    // сбрасываем прокрутку, чтобы розетка была по центру видимой области
+    partnerAreaElement.scrollTop = 0;
+}
+
+/* Скрывает заглушку и возвращает обычное содержимое. */
+function hidePlaceholder() {
+    partnerAreaElement.classList.remove("showing-placeholder");
 }
 
 function clearActiveLinks() {
@@ -140,6 +148,8 @@ async function getPartnerData(dataUrl) {
 }
 
 function renderPartner(partner) {
+    hidePlaceholder();
+
     titleElement.textContent = partner.name || partner.listTitle || "Организация";
 
     logoElement.src = partner.logo || DEFAULT_LOGO_URL;
@@ -168,25 +178,21 @@ function findOrgById(orgId) {
     return null;
 }
 
-function getFirstOrganization() {
-    return partnerIndex?.sections?.[0]?.categories?.[0]?.organizations?.[0] || null;
-}
-
 async function selectPartner(org) {
     if (!org) {
-        setStatus("Организация не найдена");
+        showPlaceholder("Выберите организацию в списке слева.");
         return;
     }
 
     setActivePartner(org.id);
-    setStatus("Загрузка информации…");
+    showPlaceholder("Загрузка информации…");
 
     try {
         const data = await getPartnerData(org.dataUrl);
         renderPartner(data);
     } catch (error) {
         console.error(error);
-        setStatus("Не удалось загрузить информацию об организации");
+        showPlaceholder("Не удалось загрузить информацию об организации.");
     }
 }
 
@@ -223,13 +229,18 @@ async function initPartnersPage() {
 
         const requestedId = decodeURIComponent(window.location.hash.replace("#", ""));
         const requestedOrg = requestedId ? findOrgById(requestedId) : null;
-        const firstOrg = getFirstOrganization();
 
-        await selectPartner(requestedOrg || firstOrg);
+        if (requestedOrg) {
+            // Переход по прямой ссылке (#id) — сразу показываем организацию.
+            await selectPartner(requestedOrg);
+        } else {
+            // Первый заход без выбора — показываем розетку с просьбой выбрать.
+            showPlaceholder("Выберите организацию в списке слева.");
+        }
     } catch (error) {
         console.error(error);
         navElement.innerHTML = '<p class="nav-loading">Не удалось загрузить список организаций.</p>';
-        setStatus("Не удалось загрузить список организаций");
+        showPlaceholder("Не удалось загрузить список организаций.");
     }
 }
 

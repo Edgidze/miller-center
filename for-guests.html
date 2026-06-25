@@ -28,6 +28,12 @@
                 </nav>
             </div>
             <div aria-live="polite" class="content-area custom-scrollbar" id="partner-area">
+                <!-- Заглушка: показывается, пока организация не выбрана или пока
+                     загружается её информация. Скрывает обычное содержимое. -->
+                <div class="content-placeholder" id="partner-placeholder">
+                    <img class="content-placeholder-figure" src="images/decor-rosette.svg" alt="" aria-hidden="true" />
+                    <p class="content-placeholder-text" id="partner-placeholder-text">Выберите организацию в списке слева.</p>
+                </div>
                 <div class="material-header">
                     <h1 id="partner-title">Выберите организацию</h1>
                 </div>

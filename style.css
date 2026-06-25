@@ -479,6 +479,49 @@ ul {
     padding: 24px;
 
     container-type: inline-size;
+
+    /* нужно для центрирования заглушки по всей высоте области */
+    position: relative;
+}
+
+/* Заглушка с розеткой: скрыта по умолчанию. */
+.content-placeholder {
+    display: none;
+}
+
+/* Когда область в состоянии заглушки — прячем обычное содержимое
+   (заголовок и две колонки) и показываем розетку по центру. */
+#partner-area.showing-placeholder .material-header,
+#partner-area.showing-placeholder .material-content {
+    display: none;
+}
+
+#partner-area.showing-placeholder .content-placeholder {
+    /* центрируем по всей видимой области (без прокрутки) */
+    position: absolute;
+    inset: 0;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.content-placeholder-figure {
+    width: clamp(120px, 30cqw, 240px);
+    height: auto;
+    opacity: 0.85;
+}
+
+.content-placeholder-text {
+    margin: 0;
+    font-size: clamp(16px, 3cqw, 22px);
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 32ch;
+    line-height: 1.4;
 }
 
 .material-header {
