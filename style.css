@@ -456,6 +456,14 @@ ul {
     overflow: hidden;
 }
 
+/* Страница «Контакты»: как и «О нас», основной блок занимает всю ширину
+   (навигации-категорий нет), поэтому .page-filler — flex-контейнер. */
+#contacts-page-filler {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
 /* Общий блок основного контента: используется и на странице партнёров
    (#partner-area внутри .page-filler рядом с навигацией), и на странице
    «О нас» (#about-area, занимающий всю ширину .page-filler).
@@ -576,4 +584,112 @@ ul {
 
 .material-additional-info {
     font-weight: 600;
+}
+
+
+/* стилизация формы обратной связи на странице «Контакты» */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 560px;
+    margin-inline: auto;
+}
+
+.contact-form-intro {
+    margin: 0;
+    line-height: 1.4;
+    opacity: 0.85;
+}
+
+/* Подпись над полем, само поле и сообщение об ошибке — вертикально */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-field label {
+    font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea {
+    font: inherit;
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 9px;
+    padding: 10px 12px;
+    width: 100%;
+
+    transition:
+        border-color 120ms ease,
+        background-color 120ms ease;
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 110px;
+    line-height: 1.4;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: white;
+}
+
+/* Сообщение об ошибке скрыто по умолчанию */
+.field-error {
+    display: none;
+    font-size: 14px;
+    color: rgb(255, 138, 128);
+}
+
+/* Состояние «поле не заполнено»: подсветка границы и показ подписи */
+.form-field.invalid input,
+.form-field.invalid textarea {
+    border-color: rgb(255, 138, 128);
+    background-color: rgba(255, 138, 128, 0.08);
+}
+
+.form-field.invalid .field-error {
+    display: block;
+}
+
+.form-actions {
+    margin-top: 4px;
+}
+
+/* Кнопка отправки — в том же стиле, что и кнопки навигации */
+.contact-form .submit {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 8px 28px;
+    font: inherit;
+    cursor: pointer;
+
+    transition:
+        background-color 120ms ease,
+        color 120ms ease;
+}
+
+.contact-form .submit:hover {
+    background-color: white;
+    color: rgb(48, 48, 48);
+}
+
+.form-success {
+    margin: 0;
+    font-weight: 600;
+    color: rgb(150, 226, 150);
 }

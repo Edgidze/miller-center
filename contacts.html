@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Miller Center — Контакты</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="page-contents" id="contacts-page-contents">
+        <div class="page-header">
+            <img alt="Miller Center Logo" id="logo" src="images/miller_logo.png" />
+        </div>
+        <div class="page-filler" id="contacts-page-filler">
+            <div class="content-area custom-scrollbar" id="contacts-area">
+                <div class="material-header">
+                    <h1 id="contacts-title">Контакты</h1>
+                </div>
+                <div class="material-content">
+                    <section class="material-fixed-column">
+                        <img alt="Схема расположения Миллер Центра" id="center-map"
+                            src="images/about/center_map.png" />
+                        <div class="material-info" id="contacts-info">
+                            <p class="material-additional-info">МФК «МИЛЛЕР ЦЕНТР»</p>
+                            <p class="material-additional-info">АДМИНИСТРАЦИЯ</p>
+                            <p>Телефон: +7 (812) 600 1080/6000</p>
+                            <p>Факс: +7 (812) 600 1081</p>
+                            <p>mail: <a href="mailto:mail@millercenter.ru">mail@millercenter.ru</a></p>
+                            <p class="material-additional-info">ОТДЕЛ АРЕНДЫ</p>
+                            <p>Телефон: +7 (812) 600 1520</p>
+                            <p>e-mail: <a href="mailto:sales@millercenter.ru">sales@millercenter.ru</a></p>
+                        </div>
+                    </section>
+                    <section class="material-scalable-column">
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <p class="contact-form-intro">Оставьте заявку, и мы свяжемся с вами. Все поля
+                                обязательны для заполнения.</p>
+
+                            <div class="form-field">
+                                <label for="field-name">Название организации</label>
+                                <input type="text" id="field-name" name="name" />
+                                <span class="field-error">Пожалуйста, заполните это поле</span>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="field-face">Контактное лицо</label>
+                                <input type="text" id="field-face" name="face" />
+                                <span class="field-error">Пожалуйста, заполните это поле</span>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="field-phone">Телефон</label>
+                                <input type="text" id="field-phone" name="phone" />
+                                <span class="field-error">Пожалуйста, заполните это поле</span>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="field-email">Email</label>
+                                <input type="text" id="field-email" name="email" />
+                                <span class="field-error">Пожалуйста, заполните это поле</span>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="field-profile">Профиль деятельности</label>
+                                <input type="text" id="field-profile" name="profile" />
+                                <span class="field-error">Пожалуйста, заполните это поле</span>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="field-info">Дополнительная информация</label>
+                                <textarea id="field-info" name="info" rows="5"></textarea>
+                                <span class="field-error">Пожалуйста, заполните это поле</span>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="submit" name="submit_arenda">Отправить</button>
+                            </div>
+
+                            <p class="form-success" id="form-success" hidden>Спасибо! Ваша заявка отправлена.</p>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="page-navigation">
+            <ul class="navigation-items-list">
+                <!-- на экранах уже пикселя возможная проблема, что кнопки навигации в ширину не поместятся- возможно, необходима обработка таких случаев -->
+                <li class="navigation-placeholder-short"></li>
+                <li class="navigation-button-wrapper"><a class="navigation-button" href="about.html">О нас</a></li>
+                <li class="navigation-placeholder"></li>
+                <li class="navigation-button-wrapper"><a class="navigation-button" href="for-guests.html">Гостям</a></li>
+                <li class="navigation-placeholder"></li>
+                <li class="navigation-button-wrapper"><a class="navigation-button" href="index.html">На главную</a></li>
+                <li class="navigation-placeholder-short"></li>
+            </ul>
+        </div>
+    </div>
+    <script defer src="contacts.js"></script>
+</body>
+
+</html>
